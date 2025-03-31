@@ -1,0 +1,71 @@
+Dart를 업그레이드하는 방법은 사용 중인 플랫폼에 따라 다릅니다.  
+
+## 1. **Dart 버전 확인**  
+현재 설치된 Dart의 버전을 확인하려면 터미널에서 다음 명령어를 실행하세요.  
+```sh
+dart --version
+```
+
+---
+
+## 2. **Dart SDK 업그레이드 방법**  
+
+### **A. Homebrew (macOS 및 Linux)**
+Homebrew를 사용하여 Dart를 설치했다면 다음 명령어로 업데이트할 수 있습니다.  
+```sh
+brew upgrade dart
+```
+
+### **B. apt (Ubuntu 및 Debian 기반)**
+공식 패키지 저장소를 사용하여 설치했다면 다음 명령어로 업그레이드할 수 있습니다.  
+```sh
+sudo apt update
+sudo apt upgrade dart
+```
+
+### **C. Snap (Ubuntu 및 기타 Linux)**
+Snap을 사용하여 Dart를 설치했다면 다음 명령어를 실행하세요.  
+```sh
+sudo snap refresh dart
+```
+
+### **D. Chocolatey (Windows)**
+Chocolatey로 설치한 경우 다음 명령어를 사용하세요.  
+```sh
+choco upgrade dart-sdk
+```
+
+### **E. Flutter를 통해 Dart 업그레이드 (Flutter와 함께 사용 중인 경우)**
+Flutter SDK에 포함된 Dart를 업데이트하려면 다음 명령어를 실행하세요.  
+```sh
+flutter upgrade
+```
+또는
+```sh
+flutter upgrade --force
+```
+
+---
+
+## 3. **수동 업그레이드 (모든 플랫폼)**
+Dart 공식 웹사이트에서 최신 버전을 직접 다운로드하여 설치할 수도 있습니다.  
+👉 [Dart 공식 다운로드 페이지](https://dart.dev/get-dart)  
+
+이 방법은 위의 패키지 매니저를 사용하지 않는 경우 유용합니다.  
+
+---
+
+## 4. **Raspberry Pi 4에서 Dart 업그레이드**
+Raspberry Pi OS(라즈비안)에서는 APT 패키지 관리자 또는 Snap을 통해 업데이트할 수 있습니다.  
+```sh
+sudo apt update
+sudo apt upgrade dart
+```
+또는
+```sh
+sudo snap refresh dart
+```
+
+더 최신 버전이 필요한 경우, 공식 웹사이트에서 ARM64용 Dart SDK를 다운로드하여 직접 설치해야 할 수도 있습니다.
+
+필요한 경우 추가 지원이 필요하면 알려주세요! 😊
